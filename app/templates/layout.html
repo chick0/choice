@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>메뉴!</title>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+        <meta name="keywords" content="메뉴, 밥">
+        <meta name="description" content="오늘 메뉴 추첨기">
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="ko_KR">
+        <meta property="og:title" content="메뉴!">
+        <meta property="og:description" content="오늘 메뉴 추첨기">
+        <meta property="og:url" content="{{ request.url_root }}">
+
+        <link rel="canonical" href="{{ request.url_root }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='bulma.css') }}">
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+        {% block script %}{% endblock %}
+    </body>
+</html>
