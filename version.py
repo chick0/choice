@@ -12,6 +12,8 @@ def update_version():
     with open(version, mode="w", encoding="utf-8") as version_writer:
         version_writer.write(hash)
 
+    print("version updated to", hash)
+
 
 if __name__ == "__main__":
     update_version()
